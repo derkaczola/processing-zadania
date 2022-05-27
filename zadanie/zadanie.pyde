@@ -17,8 +17,8 @@ class PasiastyKwadrat(Kwadrat): # dziedziczymy po klasie Kwadrat aby móć skorz
             
 class ZielonyKwadrat(Kwadrat): #nowa klasa
     def sketchZielony(self, x, y):
+        fill(0,255,127)
         Kwadrat.sketch(self, x, y)
-        fill(0,255,127) 
             
 def setup():
     size(500, 500)
@@ -39,3 +39,5 @@ def setup():
     zielonyKwadrat.sketch(100,100)
     ZIELONYKwadrat = Kwadrat(200.0)
     ZIELONYKwadrat.sketch(200,200)
+    
+    # ok, 2 pkt
